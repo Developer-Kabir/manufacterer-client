@@ -1,0 +1,56 @@
+[
+    {
+      "_id": "6290b1f522ad2b99e193ce5d",
+      "picture": "https://i.ibb.co/HhCZGr8/2-370x370-removebg-preview.png",
+      "price": 35,
+      "quantity": 200,
+      "store": 223,
+      "name": "Dean",
+      "description": "Velit Lorem sunt non reprehenderit. Sit nulla in ipsum sint id. Exercitation aute cillum cillum dolor ut anim. Exercitation sit sunt sunt mollit sint eu nostrud. Mollit dolore adipisicing in sint ad ea do laborum veniam enim in. Sit sit mollit ut aute voluptate dolor esse. Exercitation incididunt excepteur incididunt non ex reprehenderit incididunt incididunt quis Lorem minim culpa labore.\r\n"
+    },
+    {
+      "_id": "6290b1f5d87f996f79345177",
+      "picture": "https://i.ibb.co/t45FfFy/5-370x370.jpg",
+      "price": 40,
+      "quantity": 200,
+      "store": 322,
+      "name": "Beulah",
+      "description": "Velit sit consequat minim id laboris eu anim. Nostrud veniam mollit magna consequat nostrud amet fugiat do fugiat ipsum id ullamco ex et. Cillum nisi est enim commodo laborum esse. Fugiat laboris occaecat exercitation duis ullamco proident laboris exercitation sunt elit culpa.\r\n"
+    },
+    {
+      "_id": "6290b1f5cfd8cc15cae24b27",
+      "picture": "https://i.ibb.co/H71GQR3/8-370x370.jpg",
+      "price": 39,
+      "quantity": 200,
+      "store": 269,
+      "name": "Whitaker",
+      "description": "Nostrud laborum do sit dolore laborum in quis. Dolor enim amet qui incididunt irure officia laborum esse. Consectetur aliquip laboris consequat duis tempor fugiat eu dolore excepteur ex. Anim reprehenderit nulla officia excepteur sit excepteur labore adipisicing aliquip sunt.\r\n"
+    },
+    {
+      "_id": "6290b1f5cd1f1a033b1a0d16",
+      "picture": "https://i.ibb.co/bsVH1XP/10-370x370.jpg",
+      "price": 28,
+      "quantity": 200,
+      "store": 168,
+      "name": "Sutton",
+      "description": "Irure veniam in minim eiusmod sunt et. Exercitation veniam incididunt laborum consectetur et est amet consectetur id aliqua. Lorem proident voluptate esse ipsum irure consequat incididunt anim non ex aliqua.\r\n"
+    },
+    {
+      "_id": "6290b1f5bd7b3dc9471c65b4",
+      "picture": "https://i.ibb.co/3Ft32s9/11-370x370.jpg",
+      "price": 27,
+      "quantity": 200,
+      "store": 152,
+      "name": "Mcguire",
+      "description": "Minim eu exercitation ea nulla. Cillum duis duis nisi ipsum ullamco laborum sit. Cillum ex Lorem exercitation incididunt amet consectetur pariatur amet fugiat Lorem culpa non. Cupidatat voluptate excepteur et ut mollit cupidatat nisi velit ut. Minim cupidatat aute aliquip sunt laboris. Est consectetur cupidatat voluptate deserunt et esse labore duis officia eiusmod sint minim minim magna.\r\n"
+    },
+    {
+      "_id": "6290b1f5b8e869ecaaabcc03",
+      "picture": "https://i.ibb.co/LNCrVHF/12-370x370.jpg",
+      "price": 26,
+      "quantity": 200,
+      "store": 369,
+      "name": "Hancock",
+      "description": "Esse eiusmod qui in cupidatat duis nulla non sit sunt culpa velit do. Duis cupidatat deserunt do nostrud ullamco. Cillum dolore quis cillum culpa ut adipisicing esse occaecat. Ad voluptate consequat est est ea adipisicing est reprehenderit irure tempor adipisicing aliquip voluptate eiusmod. Consectetur occaecat ad minim sit sunt ut elit cillum. Esse laborum velit velit cillum enim aute excepteur dolor magna consequat anim sint do aliqua.\r\n"
+    }
+  ]
