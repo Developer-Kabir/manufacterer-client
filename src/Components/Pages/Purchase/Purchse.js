@@ -32,10 +32,14 @@ const Purchase = () => {
             <p className='rounded-box border-2 p-px font-bold my-2'>Our Avilable Stock : {item.store}</p>
             <p className='rounded-box border-2 p-px font-bold my-2'>Minimum Order Quantity : {item.quantity}</p>
             <div className="card-actions justify-center">
-            <label for="my-modal-6" class="btn modal-button">Order Now</label>
+              <label for="my-modal-6" class="btn modal-button">Order Now</label>
             </div>
-            <PurchaseModal
-            item={item}></PurchaseModal>
+            
+              <PurchaseModal
+                item={item}
+                setItem={setItem}
+              ></PurchaseModal>
+         
           </div>
         </div>
       </div>

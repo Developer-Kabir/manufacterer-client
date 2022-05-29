@@ -4,13 +4,16 @@ import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 
 
-const PurchaseModal = ({item, setTools, refetch}) => {
+
+const PurchaseModal = ({item }) => {
     const {_id, name, price } = item;
     const [User] = useAuthState(auth);
 
+   
+
+
     const handleOrder = event => {
         event.preventDefault();
-        refetch();
 
         const order = {
             orderId : _id,
@@ -22,6 +25,9 @@ const PurchaseModal = ({item, setTools, refetch}) => {
             quantity: event.target.quantity.value
         }
 
+
+    
+
         fetch('http://localhost:5000/order', {
             method: 'POST',
             headers: {
@@ -31,16 +37,9 @@ const PurchaseModal = ({item, setTools, refetch}) => {
         })
             .then(res => res.json())
             .then(data => {
-            if(data.success){
-                toast("Appointment is set, at ")
-            }
-            else{
-                toast.error('ABCD ')
-            }
-            setTools(data);
-            refetch();
-
+                toast("Order Placed Successfully")
             });
+
     }
 
 
@@ -59,6 +58,7 @@ const PurchaseModal = ({item, setTools, refetch}) => {
                         <input type="text" name="adress" placeholder="Adress" className="input input-bordered w-full max-w-xs" />
                         <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
                     </form>
+                    
                 </div>
             </div>
         </div> 
