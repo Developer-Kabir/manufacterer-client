@@ -5,6 +5,7 @@ import Dashboard from './Components/Pages/Dashboard/Dashboard';
 import Myorder from './Components/Pages/Dashboard/Myorder';
 import MyProfile from './Components/Pages/Dashboard/MyProfile';
 import Home from './Components/Pages/Home/Home';
+import MyPortFolio from './Components/Pages/MyPortFolio';
 import Purchse from './Components/Pages/Purchase/Purchse';
 import Tools from './Components/Pages/Tools/Tools';
 import Footer from './Components/SharedComponents/Footer';
@@ -23,6 +24,7 @@ function App() {
 
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='blog' element={<Blog></Blog>}></Route>
+        <Route path='portfolio' element={<MyPortFolio></MyPortFolio>}></Route>
 
         <Route path='/product' element={<Tools></Tools>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
