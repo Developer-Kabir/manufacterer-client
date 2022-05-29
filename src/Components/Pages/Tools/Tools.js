@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import useTools from '../../Hooks/useTools';
 import SingleTool from '../SingleTool/SingleTool';
 import './tools.css'
 
 const Tools = () => {
 
-     const [tools, setTools] = useState([]);
-     useEffect( () =>{
-         fetch('http://localhost:5000/parts')
-         .then(res=>res.json())
-         .then (data => setTools(data))
-     }, [])
-
+   const [tools] = useTools([]);
 
     return (
         <div className='tools'>

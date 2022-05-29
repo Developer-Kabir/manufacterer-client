@@ -6,7 +6,7 @@ const SingleTool = ({ tool }) => {
     const navigate = useNavigate();
 
     const navigateToPurchase = id =>{
-        navigate(`parts/${id}`);
+        navigate(`/parts/${id}`);
     }
 
 
