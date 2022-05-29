@@ -1,7 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blog from './Components/Pages/Blog';
-import Dashboard from './Components/Pages/Dashboard';
+import Dashboard from './Components/Pages/Dashboard/Dashboard';
+import Myorder from './Components/Pages/Dashboard/Myorder';
+import MyProfile from './Components/Pages/Dashboard/MyProfile';
 import Home from './Components/Pages/Home/Home';
 import Purchse from './Components/Pages/Purchase/Purchse';
 import Tools from './Components/Pages/Tools/Tools';
@@ -24,7 +26,14 @@ function App() {
 
         <Route path='/product' element={<Tools></Tools>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
-        <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
+        <Route path='dashboard' element={
+         <RequireAuth><Dashboard></Dashboard></RequireAuth>
+       }>
+
+          <Route path='myOrder' element={<Myorder></Myorder>}></Route>
+          <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+
+       </Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signUp' element={<SignUp></SignUp>}></Route>
         <Route path='/parts/:purchaseId' element={
@@ -32,6 +41,8 @@ function App() {
            <Purchse></Purchse>
          </RequireAuth>
        }></Route>
+
+   
 
       </Routes>
 
