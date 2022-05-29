@@ -7,6 +7,7 @@ import Tools from './Components/Pages/Tools/Tools';
 import Footer from './Components/SharedComponents/Footer';
 import Header from './Components/SharedComponents/Header';
 import Login from './Components/User/Login';
+import SignUp from './Components/User/SignUp';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path='product' element={<Tools></Tools>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
+        <Route path='login' element={<Login></Login>}></Route>
+        <Route path='signUp' element={<SignUp></SignUp>}></Route>
 
       </Routes>
 
