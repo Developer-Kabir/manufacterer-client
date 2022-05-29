@@ -10,6 +10,7 @@ import Purchse from './Components/Pages/Purchase/Purchse';
 import Tools from './Components/Pages/Tools/Tools';
 import Footer from './Components/SharedComponents/Footer';
 import Header from './Components/SharedComponents/Header';
+import NotFound from './Components/SharedComponents/NotFound';
 import Login from './Components/User/Login';
 import RequireAuth from './Components/User/RequireAuth';
 import SignUp from './Components/User/SignUp';
@@ -21,7 +22,7 @@ function App() {
 
 
       <Routes>
-
+        <Route path='*' element={<NotFound></NotFound>}></Route>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='blog' element={<Blog></Blog>}></Route>
         <Route path='portfolio' element={<MyPortFolio></MyPortFolio>}></Route>
