@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 import Blog from './Components/Pages/Blog';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
 import Myorder from './Components/Pages/Dashboard/Myorder';
 import MyProfile from './Components/Pages/Dashboard/MyProfile';
+import Review from './Components/Pages/Dashboard/Review';
 import Home from './Components/Pages/Home/Home';
 import MyPortFolio from './Components/Pages/MyPortFolio';
 import Purchse from './Components/Pages/Purchase/Purchse';
@@ -14,6 +16,7 @@ import NotFound from './Components/SharedComponents/NotFound';
 import Login from './Components/User/Login';
 import RequireAuth from './Components/User/RequireAuth';
 import SignUp from './Components/User/SignUp';
+
 
 function App() {
   return (
@@ -35,6 +38,7 @@ function App() {
 
           <Route path='myOrder' element={<Myorder></Myorder>}></Route>
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='myReview' element={<Review></Review>}></Route>
 
        </Route>
         <Route path='login' element={<Login></Login>}></Route>

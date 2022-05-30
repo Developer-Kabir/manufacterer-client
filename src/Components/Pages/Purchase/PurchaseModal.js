@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 
 
@@ -38,9 +38,12 @@ const PurchaseModal = ({item }) => {
         })
             .then(res => res.json())
             .then(data => {
-                toast("Order Placed Successfully")
-            });
-
+                console.log(data)
+                if (data.insertedId) {
+                    toast.success('Placed your order successfully!')
+                }
+            })
+            event.target.reset();
     }
 
 
@@ -55,11 +58,11 @@ const PurchaseModal = ({item }) => {
                     <form  onSubmit={handleOrder} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
                         <input type="text" name="name" disabled value={User?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                         <input type="email" name="email" disabled value={User?.email || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="number" min="200"  name="quantity" placeholder="Order Quantity"  className="input input-bordered w-full max-w-xs" require />
-                        <input type="text" name="adress" placeholder="Adress" requierd className="input input-bordered w-full max-w-xs" />
+                        <input type="number" min="200"  name="quantity" placeholder="Order Quantity"  className="input input-bordered w-full max-w-xs" required />
+                        <input type="text" name="adress" placeholder="Adress" requierd className="input input-bordered w-full max-w-xs" required />
                         <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
                     </form>
-                    
+                    <ToastContainer />
                 </div>
             </div>
         </div> 
