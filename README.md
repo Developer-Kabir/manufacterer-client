@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Elegent Autoparts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Click [Elegent Autoparts](https://github.com/facebook/create-react-app) to visit my website
 
 ## Available Scripts
 

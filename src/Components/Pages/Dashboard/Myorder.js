@@ -15,7 +15,7 @@ const Myorder = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?purchaser=${user.email}`, {
+            fetch(`https://gentle-fortress-48614.herokuapp.com/order?purchaser=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

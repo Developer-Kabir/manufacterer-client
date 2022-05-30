@@ -7,7 +7,7 @@ const MyPortFolio = () => {
             <div class="hero min-h-screen bg-base-200">
                 <div class="hero-content flex-col lg:flex-row">
                     <img width={400} src="https://i.ibb.co/HTX6Tr0/IMG20200724170938.jpg" alt="" />
-                    <div>
+                    <div className='ml-8'>
                         <h1 class="text-5xl font-bold">Kabir Hossain</h1>
                         <p class="py-2 font-bold">Email: Hakabir40@gmail.com</p>
                         <p class="py-2 font-bold">Educationa Qualification : B.B.A (Management)</p>

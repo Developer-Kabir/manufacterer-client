@@ -22,7 +22,7 @@ const Review = () => {
 
         }
 
-        const url = 'http://localhost:5000/review';
+        const url = 'https://gentle-fortress-48614.herokuapp.com/review';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -51,8 +51,8 @@ const Review = () => {
                 <form onSubmit={handleReview} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
                     <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                     <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
-                    <textarea name="reviewText" placeholder="Type  short review here" className="input input-bordered w-full max-w-xs" require />
-                    <input type="number" name="rating" min="1" max="5" placeholder="Rating Out of 5" requierd className="input input-bordered w-full max-w-xs" />
+                    <textarea name="reviewText" placeholder="Type  short review here" className="input input-bordered w-full max-w-xs" required />
+                    <input type="number" name="rating" min="1" max="5" placeholder="Rating Out of 5"  className="input input-bordered w-full max-w-xs" requierd />
                     <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
                 </form>
                 <ToastContainer />

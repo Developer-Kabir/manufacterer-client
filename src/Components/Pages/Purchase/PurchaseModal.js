@@ -29,7 +29,7 @@ const PurchaseModal = ({item }) => {
 
     
 
-        fetch('http://localhost:5000/order', {
+        fetch('https://gentle-fortress-48614.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -62,10 +62,12 @@ const PurchaseModal = ({item }) => {
                         <input type="text" name="adress" placeholder="Adress" requierd className="input input-bordered w-full max-w-xs" required />
                         <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
                     </form>
-                    <ToastContainer />
+
                 </div>
             </div>
+            <ToastContainer />
         </div> 
+
 
 
     );
