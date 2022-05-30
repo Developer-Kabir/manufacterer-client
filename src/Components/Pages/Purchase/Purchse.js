@@ -12,7 +12,7 @@ const Purchase = () => {
 
 
   useEffect(() => {
-    fetch(`https://gentle-fortress-48614.herokuapp.com/parts/${purchaseId}`)
+    fetch(`https://elegent-autoparts.herokuapp.com/parts/${purchaseId}`)
       .then(res => res.json())
       .then(data => setItem(data))
   }, [purchaseId])

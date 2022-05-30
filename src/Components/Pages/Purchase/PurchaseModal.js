@@ -29,7 +29,7 @@ const PurchaseModal = ({item }) => {
 
     
 
-        fetch('https://gentle-fortress-48614.herokuapp.com/order', {
+        fetch('https://elegent-autoparts.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

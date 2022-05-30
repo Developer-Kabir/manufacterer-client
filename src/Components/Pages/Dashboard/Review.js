@@ -22,7 +22,7 @@ const Review = () => {
 
         }
 
-        const url = 'https://gentle-fortress-48614.herokuapp.com/review';
+        const url = 'https://elegent-autoparts.herokuapp.com/review';
         fetch(url, {
             method: 'POST',
             headers: {
