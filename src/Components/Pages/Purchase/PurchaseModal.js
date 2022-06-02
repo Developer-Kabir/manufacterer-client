@@ -7,7 +7,7 @@ import auth from '../../../firebase.init';
 
 
 const PurchaseModal = ({item }) => {
-    const {_id, name, price } = item;
+    const {_id, name, price, store } = item;
     const [User] = useAuthState(auth);
 
    
@@ -58,7 +58,7 @@ const PurchaseModal = ({item }) => {
                     <form  onSubmit={handleOrder} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
                         <input type="text" name="name" disabled value={User?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                         <input type="email" name="email" disabled value={User?.email || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="number" min="200"  name="quantity" placeholder="Order Quantity"  className="input input-bordered w-full max-w-xs" required />
+                        <input type="number" min="200" max={store} name="quantity" placeholder="Order Quantity"  className="input input-bordered w-full max-w-xs" required />
                         <input type="text" name="adress" placeholder="Adress" requierd className="input input-bordered w-full max-w-xs" required />
                         <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
                     </form>
