@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DealDAy = () => {
     return (
@@ -20,7 +21,7 @@ const DealDAy = () => {
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
                         </div>
                         <p className='text-primary text-xl font-bold my-2'> Price : $ 520 <del>$ 600</del></p>
-                        <button class="btn btn-primary">Buy Now</button>
+                        <Link to="/product" class="btn btn-primary">Go to Purchase page</Link>
                         <p><span className='text-primary text-xl mt-2'>Hurry Up!!</span> Offer will end today</p>
                     </div>
                 </div>
@@ -38,7 +39,7 @@ const DealDAy = () => {
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
                         </div>
                         <p className='text-primary text-xl font-bold my-2'> Price : $ 340 <del>$ 400</del> </p>
-                        <button class="btn btn-primary">Buy Now</button>
+                        <Link to="/product" class="btn btn-primary">Go to Purchase page</Link>
                         <p><span className='text-primary text-xl mt-2'>Hurry Up!!</span> Offer will end today</p>
                     </div>
                 </div>
